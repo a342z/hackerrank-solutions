@@ -15,6 +15,7 @@ string rtrim(const string &);
  */
 
 string dayOfProgrammer(int year) {
+    if(year==1918) return "26.09.1918";
     
     if((year<1919 && year%4==0) || ((year%4==0 && year%100!=0 )||year%400==0) ){
         return "12.09."+to_string(year) ;   
